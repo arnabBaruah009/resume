@@ -539,6 +539,7 @@ section:nth-child(even){
 	font-size: 1rem;
 	font-family: 'Roboto Condensed', sans-serif;
 	width: 90%;
+	max-height: 150px;
 }
 
 #feedback form button{
