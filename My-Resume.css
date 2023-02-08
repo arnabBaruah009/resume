@@ -140,6 +140,14 @@ section:nth-child(even){
     font-family: 'Raleway';
     padding: 4%;
     line-height: 30px;
+	text-align: justify;
+}
+
+@media screen and (max-width: 700px) {
+	
+	#my-image{
+		margin-top: -15%;
+	}
 }
 
 
@@ -284,25 +292,6 @@ section:nth-child(even){
 	left: 49.75%;
 }
 
-@media screen and (max-width: 700px){
-
-	.timeline-box{
-		width: 60%;
-	}
-
-	.timeline-box{
-		left: 15% !important;
-	}
-
-	.vl{
-		left: 8%;
-	}
-
-	.dot{
-		left: 7.5% !important;
-	}
-}
-
 
 /*-----education-----*/
 
@@ -338,11 +327,6 @@ section:nth-child(even){
 	text-align: start;
 }
 
-.intern-timeline-box img{
-	position: absolute;
-	left: 0;
-}
-
 .intern-timeline-box:nth-child(even) img{
 	left: 80%;
 }
@@ -362,12 +346,13 @@ section:nth-child(even){
 	position: relative;
 	box-sizing: border-box;
 	margin: 10px;
+	border-radius: 10%;
+	overflow: hidden;
 }
 
 .project-contents > div div{
 	height: 100%;
 	width: 100%;
-	border-radius: 10%;
 	background-size: 100% 100%;
     background-attachment: scroll;
     background-position: center;
@@ -403,14 +388,13 @@ section:nth-child(even){
     position: absolute;
     background-color: #eeeff7;
     top: 60%;
-    height: 26%;
     box-sizing: border-box;
     visibility: hidden;
     line-height: 22px;
 }
 
-#pro-resume{
-	background-image: url(./images/resume_bck_image.jpeg);
+#pro-alarm-clock{
+	background-image: url(./images/alarm_clock.jpeg);
 }
 
 #pro-to-do{
@@ -451,15 +435,15 @@ section:nth-child(even){
 /*-----contacts-----*/
 
 #contacts{
-	background: rgb(77,123,237);
-	background: linear-gradient(90deg, rgba(77,123,237,1) 0%, rgba(41,42,236,1) 100%);
-	height: 60vh;
+	background: rgb(2,25,7);
+	background: linear-gradient(90deg, rgba(2,25,7,1) 0%, rgba(41,35,23,1) 100%);
 }
 
 .contact-contents{
 	width: 100%;
-	height: 500px;
+	height: fit-content;
 	display: flex;
+	align-items: center;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: navajowhite;
 }
@@ -477,7 +461,7 @@ section:nth-child(even){
 }
 
 #contact-info > div{
-	box-shadow: 0 0 35px 0px black;
+	box-shadow: 0 0 35px 0px rgb(180, 177, 177);
     padding: 20px;
 }
 
@@ -552,6 +536,49 @@ section:nth-child(even){
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
+
+/*-----media screen-----*/
+@media screen and (max-width: 700px){
+
+	.timeline-box{
+		width: 80%;
+		left: 15% !important;
+		flex-direction: row-reverse;
+	}
+
+	.details{
+		align-items: flex-start;
+	}
+
+	.details h1{
+		text-align: start;
+	}
+
+	.intern-font span{
+		text-align: justify !important ;
+	}
+
+	.vl{
+		left: 8%;
+	}
+
+	.dot{
+		left: 7.5% !important;
+	}
+
+	.contact-contents{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#contact-info{
+		width: 80%;
+	}
+
+	#contact-info{
+		margin-top: 30px;
+	}
+}
 
 
 
