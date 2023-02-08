@@ -496,7 +496,6 @@ section:nth-child(even){
 	display: flex;
 	flex-direction: column;
 	padding: 4%;
-	
 }
 
 #feedback span{
@@ -551,7 +550,12 @@ section:nth-child(even){
 	}
 
 	.details h1{
+		font-size: 1.1rem;
 		text-align: start;
+	}
+
+	.details span{
+		font-size: 0.9rem;
 	}
 
 	.intern-font span{
@@ -575,8 +579,17 @@ section:nth-child(even){
 		width: 80%;
 	}
 
+	#contact-info span{
+		font-size: 1rem;
+	}
+
 	#contact-info{
 		margin-top: 30px;
+	}
+
+	#feedback{
+		width: 88%;
+		align-items: flex-start;
 	}
 }
 
