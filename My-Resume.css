@@ -545,6 +545,10 @@ section:nth-child(even){
 /*-----media screen-----*/
 @media screen and (max-width: 700px){
 
+	.timeline{
+		width: 95%;
+	}
+
 	.timeline-box{
 		width: 80%;
 		left: 15% !important;
