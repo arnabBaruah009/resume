@@ -40,8 +40,8 @@ section:nth-child(even){
 
 #body-header{
 	height: 70vh;
-	opacity: 0.75;
-	background-image: url(./images/library.jpg);
+	opacity: 0.9;
+	background-image: url(./images/50\ Black\ Wallpaper\ In\ FHD\ For\ Free\ Download\ For\ Android.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -409,6 +409,10 @@ section:nth-child(even){
 	background-image: url(./images/green_building_image.jpeg);
 }
 
+.project-contents > div:hover{
+	box-shadow: 0px 0px 20px 2px black;
+}
+
 .project-contents > div:hover div{
 	animation: bck_image_animate 0.5s ease-in-out;
 	filter: brightness(30%);
@@ -528,6 +532,8 @@ section:nth-child(even){
     font-size: 1rem;
     background-color: antiquewhite;
     padding: 3% 5%;
+	border-radius: 10px;
+	cursor: pointer;
 }
 
 #feedback form ::placeholder{
