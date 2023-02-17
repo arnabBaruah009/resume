@@ -29,6 +29,7 @@ section{
 
 .section-heading span{
 	display: inline-block;
+	letter-spacing: 1px;
 }
 
 section:nth-child(even){
@@ -281,7 +282,7 @@ section:nth-child(even){
 	transform: rotate(90deg);
 	top: 53%;
 	z-index: 2;
-	color: #1006d1;
+	color: #e92727;
 }
 
 .dot{
@@ -374,6 +375,9 @@ section:nth-child(even){
 
 .pro-name:hover{
 	text-decoration: underline;
+	text-decoration-color: rgb(214, 214, 147);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 5px;
 }
 
 .pro-name a{
@@ -488,7 +492,7 @@ section:nth-child(even){
 #contact-info span{
 	display: block;
 	line-height: 27px;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color: navajowhite;
 }
 
