@@ -282,7 +282,7 @@ section:nth-child(even){
 	transform: rotate(90deg);
 	top: 53%;
 	z-index: 2;
-	color: #e92727;
+	color: #5d7251;
 }
 
 .dot{
@@ -507,8 +507,9 @@ section:nth-child(even){
 	padding: 4%;
 }
 
-#feedback span{
-	font-size: 2rem;
+#feedback h1{
+	font-weight: lighter;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
@@ -592,10 +593,7 @@ section:nth-child(even){
 
 	#contact-info{
 		width: 80%;
-	}
-
-	#contact-info span{
-		font-size: 1rem;
+		margin-bottom: 30px;
 	}
 
 	#contact-info{
