@@ -70,13 +70,13 @@ section:nth-child(even){
 	padding: 5vh 0px 0px 0px;
 }
 
-#nav-list li a{
-	transition: color 0.5s, border-bottom 1s;
+#nav-list ul li{
+	margin: 0;
+	padding: 0px 25px 0px 25px;
 }
 
 #nav-list li a:hover{
 	color: lightgrey;
-	border-bottom: solid;
 }
 
 #my-name{
@@ -535,18 +535,47 @@ section:nth-child(even){
 }
 
 #feedback form button{
-    font-size: 1rem;
-    background-color: antiquewhite;
-    padding: 3% 5%;
-	border-radius: 10px;
+	background-color: antiquewhite;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #fff;
 	cursor: pointer;
+}
+
+#feedback form button:hover{
+	animation: rainbow 1s ease-in-out infinite;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+@keyframes rainbow {
+    0% {
+      box-shadow: 0 0 10px #f00; /* red shadow */
+    }
+    16.666% {
+      box-shadow: 0 0 10px #ff0; /* yellow shadow */
+    }
+    33.333% {
+      box-shadow: 0 0 10px #0f0; /* green shadow */
+    }
+    50% {
+      box-shadow: 0 0 10px #0ff; /* cyan shadow */
+    }
+    66.666% {
+      box-shadow: 0 0 10px #00f; /* blue shadow */
+    }
+    83.333% {
+      box-shadow: 0 0 10px #f0f; /* magenta shadow */
+    }
+    100% {
+      box-shadow: 0 0 10px #f00; /* red shadow */
+    }
 }
 
 #feedback form ::placeholder{
 	letter-spacing: 2px;
 	font-family: 'Roboto Condensed', sans-serif;
 }
-
 
 /*-----media screen-----*/
 @media screen and (max-width: 700px){
